@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  server:
+    restart: unless-stopped
+    build:
+        context: .
+        args:
+            GOARCH: arm64
+            GOOS: linux
+    environment:
+        CONFIG: ./config.json
+    volumes: 
+        - /etc/letsencrypt/archive/quehl.xyz/privkey1.pem:/app/key.pem
+        - /etc/letsencrypt/archive/quehl.xyz/cert1.pem:/app/certificate.pem
+        # mounts the config file
+        - ./config.json:/app/config.json
+        # mounts the directory from where to serves files from
+        - ./public:/app/public
+    ports:
+        - 10443:443

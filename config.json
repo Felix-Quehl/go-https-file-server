@@ -1,0 +1,6 @@
+{
+    "HttpsListenAddress": ":443",
+    "DomainCertificatePath": "/app/certificate.pem",
+    "PrivateKeyPath": "/app/key.pem",
+    "StaticContentDirectory": "/app/public"
+}
