@@ -6,7 +6,7 @@ Just put your stuff in the `./public` directory.
 
 ## Run
 
-Customize the docker-compose file and just start it :)
+Customize the volume mount and the GOARCH in the docker-compose file and just start it :)
 
 ```bash
 docker-compose up
