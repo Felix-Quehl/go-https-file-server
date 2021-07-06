@@ -10,8 +10,10 @@ services:
     environment:
         CONFIG: ./config.json
     volumes: 
-        - /etc/letsencrypt/archive/quehl.xyz/privkey1.pem:/app/key.pem
-        - /etc/letsencrypt/archive/quehl.xyz/cert1.pem:/app/certificate.pem
+        # mounts the private-key/secret
+        - /etc/letsencrypt/archive/domain.com/privkey1.pem:/app/key.pem
+        # mounts the public-key/certificate
+        - /etc/letsencrypt/archive/domain.com/cert1.pem:/app/certificate.pem
         # mounts the config file
         - ./config.json:/app/config.json
         # mounts the directory from where to serves files from
