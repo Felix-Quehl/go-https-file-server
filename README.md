@@ -1,7 +1,7 @@
 # simple-go-webserver
 
 This is a simple https file server.
-Does server static websites you of the box.
+Does server static websites of the box.
 Just put your stuff in the public directory.
 
 ## Run
