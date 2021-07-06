@@ -2,7 +2,7 @@
 
 This is a simple https file server.
 Does server static websites of the box.
-Just put your stuff in the public directory.
+Just put your stuff in the `./public` directory.
 
 ## Run
 
