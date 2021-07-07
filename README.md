@@ -1,6 +1,7 @@
 # simple-go-webserver
 
-*this is just a private project, nothing sophisticated*
+*This tool is a side product of me creating my own website.  
+This is nothing sophisticated. [Read the story here.](https://quehl.xyz/0_about.html)*   
 
 This is a simple https file server.
 Does server static websites of the box.
